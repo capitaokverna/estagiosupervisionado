@@ -17,7 +17,7 @@ const db = new Pool({
 
 
 //---------------------------------------------------
-// LOGIN
+// LOGIN - Realiza login ou pega exceções
 //---------------------------------------------------
 
 app.post("/api/login", async (req, res) => {
@@ -72,7 +72,7 @@ app.post("/api/login", async (req, res) => {
 
 
 //---------------------------------------------------
-// CLIENTES - LISTAR
+// CLIENTES - Listar os clientes
 //---------------------------------------------------
 
 app.get("/api/clientes", async (req, res) => {
@@ -121,7 +121,7 @@ app.get("/api/clientes", async (req, res) => {
 
 
 //---------------------------------------------------
-// CLIENTES - CADASTRAR
+// CLIENTES - Cadastrar os clientes
 //---------------------------------------------------
 
 app.post("/api/clientes", async (req, res) => {
@@ -220,7 +220,7 @@ app.post("/api/clientes", async (req, res) => {
 
 
 //---------------------------------------------------
-// CLIENTES - EXCLUIR
+// CLIENTES - Excluir os clientes
 //---------------------------------------------------
 
 app.delete("/api/clientes/:id", async (req, res) => {
@@ -258,7 +258,7 @@ app.delete("/api/clientes/:id", async (req, res) => {
 
 
 //---------------------------------------------------
-// HEALTH CHECK
+// Health check
 //---------------------------------------------------
 
 app.get("/", (req, res) => {
