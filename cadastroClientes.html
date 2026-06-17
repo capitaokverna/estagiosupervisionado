@@ -1,6 +1,13 @@
+<!--
+    Formulário principal de cadastro de clientes.
+    Os campos deste formulário serão enviados para a API
+    através da função salvarCliente() definida no clientes.js.
+-->
 <form id="clienteForm">
 
 <div class="row">
+
+    <!-- Dados básicos do cliente -->
 
     <div class="col-md-6 mb-3">
 
@@ -45,6 +52,8 @@
 
     <hr class="my-3">
 
+    <!-- Informações do responsável técnico -->
+
     <h6>Contato Técnico</h6>
 
     <div class="col-md-4 mb-3">
@@ -88,6 +97,8 @@
 
     <hr class="my-3">
 
+    <!-- Informações do responsável gerencial -->
+
     <h6>Contato Gerencial</h6>
 
     <div class="col-md-4 mb-3">
@@ -130,6 +141,12 @@
     </div>
 
 </div>
+
+<!--
+    Ações do formulário.
+    Salvar envia os dados para a API.
+    Limpar remove os dados preenchidos da tela.
+-->
 
 <div class="mt-4">
 
